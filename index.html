@@ -19,8 +19,21 @@
     <div id="main_page" class="text-center bg-secondary" style="height: 100vh;">
       <h1>COBRA App Name</h1>
       <p>[COBRA APP NAME] is an app backed by COBRA technology for...</p>
-
-      <button type="button" class="btn btn-primary" onclick="press_start()">Start</button>
+      
+      <p>Fill survey to test cobra!</p>
+      
+      <iframe style="" name="transFrame" id="transFrame" hidden></iframe>
+      
+      <form id="google_form" target="transFrame" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeeGYnngCGQsExdoB0egcii_YHT_9vZ97JQCg_Mtdm05hvUxw/formResponse">
+        <label for="FNAME">What sport?</label>
+          <input name="entry.1982246633" type="text"/>
+        <label for="LNAME">Age?</label>
+          <input name="entry.1746754747" type="text"/>
+        <!-- <input type="submit" value="Submit"> -->
+      </form>
+      
+      <button id="start_button" type="button" class="btn btn-primary" onclick="press_start()">Start</button>
+      
     </div>
 
 
