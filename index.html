@@ -19,7 +19,7 @@
     <div id="main_page" class="text-center"> 
       
       <h1 style="padding-top: 5vh;">COBRA App</h1>
-      <p>Our COBRA App is an app backed by COBRA technology that can screen for neurological disorders or injury detecting oculomotor signatures which allows medical staff to localize the affected brain region and characterize the nature of a mild deficit in a timely manner.</p>
+      <p>Our COBRA App is an app backed by the Comprehensive Oculomotor Behavioral Response Assessment technology that can screen for neurological disorders or injury detecting oculomotor signatures which allows medical staff to localize the affected brain region and characterize the nature of a mild deficit in a timely manner.</p>
       
       <div class="card mx-auto" style="width: 18rem; margin-top: 5vh;">
       <div class="card-body">
@@ -30,18 +30,42 @@
       </div>
       </div>
       
-      <div class="card mx-auto" style="width: 18rem; margin-top: 5vh; margin-bottom: 10vh;">
+      <div id="form_card" class="card mx-auto" style="width: 18rem; margin-top: 5vh; margin-bottom: 10vh;">
       <div class="card-body">
       
         <p>Fill out the survey to test the browser prototype of cobra:</p>
         
         <iframe style="" name="transFrame" id="transFrame" hidden></iframe>
         
-        <form id="google_form" target="transFrame" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeeGYnngCGQsExdoB0egcii_YHT_9vZ97JQCg_Mtdm05hvUxw/formResponse">
-          <label for="FNAME">What sport?</label>
-            <input name="entry.1982246633" type="text"/>
-          <label for="LNAME">Age?</label>
-            <input name="entry.1746754747" type="text"/>
+        <form id="google_form" target="transFrame" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScC4UjSgDpPKGjxyyVp-PpW0l_Ig9g_KXpDNHPmiAn-5dtWpA/formResponse">
+          <label for="Age">What is your age?</label>
+            <input id="Age" name="entry.1143096981" type="text"/>
+          <label for="Athletic">Do you consider yourself athletic?</label>
+            <select id="Athletic" class="form-select" aria-label="Default select example" name="entry.1281812252">
+              <option selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          <label for="Sport">What sport, if any, do you play the most?</label>
+            <input id="Sport" name="entry.1780699839" type="text"/>
+          <label for="Health">Do you consider yourself healthy?</label>
+            <select id="Health" class="form-select" aria-label="Default select example" name="entry.512440963">
+              <option selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          <label for="Health2">Do you worry about your health often?</label>
+            <select id="Health2" class="form-select" aria-label="Default select example" name="entry.934517431">
+              <option selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          <label for="Cobra">Does a produce like COBRA interest you?</label>
+            <select id="Cobra" class="form-select" aria-label="Default select example" name="entry.1230816702">
+              <option selected>Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           <!-- <input type="submit" value="Submit"> -->
         </form>
         

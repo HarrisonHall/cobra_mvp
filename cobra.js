@@ -13,7 +13,7 @@ function show_element(elem) {
 }
 
 function submit_form() {
-  hide_element($("#google_form"));
+  hide_element($("#form_card"));
   show_element($("#start_button"));
   $("#google_form").submit();
 }
